@@ -38,7 +38,7 @@ public class Application {
 			switch(input) {
 			case 1: 
 				Event e = new Event();
-				int dt, mon, yr, hr, min;
+				
 				System.out.println("What is the name of the event?");
 				eventName = s.nextLine();
 				System.out.println("Event name is " + eventName);
@@ -106,7 +106,7 @@ public class Application {
 				String m = Integer.toString(month);
 				String d = Integer.toString(date);
 				String y = Integer.toString(year);
-				String mdy = m + d + y;
+				
 				
 				System.out.println("Enter Hour:");
 				hour = s.nextInt();
@@ -128,7 +128,7 @@ public class Application {
 				
 				e.setData(hour, minute, month, date, year, eventName);
 				eventList.add(e);
-				//h.put(mdy, e);
+				
 				System.out.println("Event added successfully");
 				
 				break;
